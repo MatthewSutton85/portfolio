@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
+import Nav from 'react-bootstrap/Nav';
 
 class Header extends Component {
   render() {
 
     return (     
         <div id="header" className="container-fluid">
-         <h1>Matthew Sutton</h1>         
-         <ul class="nav justify-content-center">
-            <li class="nav-item">
-               <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-         </ul>
+         <h1 className="display-1">Matthew Sutton</h1>         
+         <Nav
+            activeKey="/home"
+            onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}>
+            <Nav.Item>
+               <Nav.Link href="/home">Home</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+               <Nav.Link eventKey="link-1">About</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+               <Nav.Link eventKey="link-2">Portfolio</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+               <Nav.Link eventKey="link-3">Contact</Nav.Link>
+            </Nav.Item>
+         </Nav>
       </div>
     );
   }
