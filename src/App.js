@@ -1,18 +1,15 @@
 import logo from './logo.svg';
+import $ from 'jquery';
+import Header from './components/Header';
+import About from './components/About';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-          Matthew Sutton
-        </h1>
-        <h3>
-          Portfolio
-        </h3>
-      </header>
+      <Header/>
+      <About />
     </div>
   );
 }
