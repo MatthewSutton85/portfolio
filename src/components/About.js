@@ -5,24 +5,28 @@ import Col from 'react-bootstrap/Col';
 
 class About extends Component {
   render() {
-
+    let resumeData = this.props.resumeData;
     return (
-      <Container fluid className="App-about-cont">
-        <Row>
-          <Col>
-            <h3 class ="display-3">
-                About me
-            </h3>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <p>
-              My name is Matthew, a 30 something year old developer from Queensland
-            </p>
-          </Col>
-        </Row>          
-      </Container>
+      <React.Fragment>
+        {/*generated-code*/}
+        <Container fluid className="App-about-cont">
+          <Row>
+            <Col>
+              <h3 class ="display-3">
+                  About me
+              </h3>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <p>
+                My name is Matthew, a 30 something year old developer from {resumeData.state}
+              </p>
+            </Col>
+          </Row>          
+        </Container>
+      </React.Fragment>
+      
     );
   }
 }
