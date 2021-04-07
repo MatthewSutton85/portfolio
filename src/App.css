@@ -12,7 +12,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 #header, #home {
   background-color: transparent !important;
   min-height: 20vh;
@@ -24,6 +29,25 @@
   color: white;
 }
 
+#about {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#resume {
+  color:white;
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#portfolio {
+  color: white;
+}
+
+.project-thumbnail {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 .App-about-cont {
   color:#fff;
   display: flex;

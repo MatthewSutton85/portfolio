@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class Header extends Component {
   render() {
@@ -6,14 +9,14 @@ class Header extends Component {
     return (             
          <React.Fragment>
             {/*generated code*/}
-            <header id="home">
-               <div className="container-fluid">
-                  <div className="banner-text">
+            <Container id="home">
+               <Row className="container-fluid">
+                  <Col className="banner-text">
                      <h1 className="display-1">{resumeData.name}</h1>
                      <h3>{resumeData.role}</h3>
-                  </div>
-               </div>
-            </header>
+                  </Col>
+               </Row>
+            </Container>
          </React.Fragment>
     );
   }

@@ -9,19 +9,24 @@ class About extends Component {
     return (
       <React.Fragment>
         {/*generated-code*/}
-        <Container fluid className="App-about-cont">
-          <Row>
+        <Container className="App-about-cont" id="about">
+          <Row>            
             <Col>
-              <h3 class ="display-3">
+              <h4 class ="display-4">
                   About me
-              </h3>
+              </h4>
             </Col>
           </Row>
           <Row>
             <Col>
               <p>
-                My name is Matthew, a 30 something year old developer from {resumeData.state}
+                My name is Matthew, a 30 something year old developer from {resumeData.state}.
               </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi ante, auctor id elit ullamcorper, placerat auctor massa. Sed vel tempus massa. 
+                Etiam eget orci id ligula dapibus semper vitae at arcu. Aliquam sagittis pretium orci. Vestibulum mattis odio nec massa vestibulum, et euismod lorem scelerisque.</p>
+            </Col>
+            <Col>
+              <p>Photo</p>
             </Col>
           </Row>          
         </Container>
