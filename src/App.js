@@ -36,12 +36,12 @@ function App() {
 	        }
 	    }
 	}} />
-      <Header resumeData={resumeData}/>
+      <Header resumeData={resumeData} />
       <About resumeData={resumeData} />
-      <Resume resumeData={resumeData}/>
-      <Portfolio/>
-      <Contact />
-      <Footer />
+      <Resume resumeData={resumeData} />
+      <Portfolio resumeData={resumeData} />
+      <Contact resumeData={resumeData} />
+      <Footer resumeData={resumeData} />
     </div>
   );
 }
