@@ -38,8 +38,8 @@ function App() {
 	}} />
       <Header resumeData={resumeData} />
       <About resumeData={resumeData} />
-      <Resume resumeData={resumeData} />
-      <Portfolio resumeData={resumeData} />
+	  <Portfolio resumeData={resumeData} />
+      <Resume resumeData={resumeData} />      
       <Contact resumeData={resumeData} />
       <Footer resumeData={resumeData} />
     </div>
